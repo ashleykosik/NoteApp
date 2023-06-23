@@ -1,0 +1,31 @@
+/*
+purple: #512D6D
+pink: #F8485E
+white: #EEEEEE
+blue: #00C1D4
+*/
+
+body {
+  background-color: #EEEEEE
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 10px
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#submit-button {
+    background-color:#F8485E;
+    border: white
+}
+
+#login {
+    background-color: #512D6D;
+    border: white;
+    float: right
+}
+

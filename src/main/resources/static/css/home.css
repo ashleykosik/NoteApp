@@ -1,0 +1,27 @@
+
+/*
+purple: #512D6D
+pink: #F8485E
+white: #EEEEEE
+blue: #00C1D4
+*/
+
+body {
+  background-color: #EEEEEE
+}
+
+#logout {
+  float: right;
+  background-color:#00C1D4;
+  margin: -40px 10px;
+  border: white
+}
+
+#submit-button {
+   background-color:#F8485E;
+   border: black
+}
+
+#note-form {
+    margin-top: 50px
+}

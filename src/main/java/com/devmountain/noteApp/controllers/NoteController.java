@@ -7,24 +7,24 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/notes")
+@RequestMapping("api/v1/notes")
 public class NoteController {
 
     @Autowired
     private NoteService noteService;
 
 
-    @GetMapping("/user/{userId")
+    @GetMapping("/user/{userId}")
     public List<NoteDto> getNotesByUser(@PathVariable Long userId){
         return noteService.getAllNotesByUserId(userId);
     }
 
-    @PostMapping("/user/{userId")
+    @PostMapping("/user/{userId}")
     public void addNote(@RequestBody NoteDto noteDto, @PathVariable Long userId) {
-        noteService.addnote(noteDto, userId);
+        noteService.addNote(noteDto, userId);
     }
 
-    @DeleteMapping("/{noteId")
+    @DeleteMapping("/{noteId}")
     public void deleteNoteById(@PathVariable Long noteId){
         noteService.deleteNoteById(noteId);
     }
@@ -34,7 +34,7 @@ public class NoteController {
         noteService.updateNoteById(noteDto);
     }
 
-    @GetMapping("/{noteId")
+    @GetMapping("/{noteId}")
     public Optional<NoteDto> getNoteById(@PathVariable Long noteId){
         return noteService.getNoteById(noteId);
     }
